@@ -2,20 +2,15 @@
 
 "------------------------------ Fevrier 2017 ---------------------------------
 
-"-------------------------------- VUNDLE -------------------------------------
+"------------------------------- VIM-PLUG ------------------------------------
+call plug#begin()
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+Plug 'vim-syntastic/syntastic'
+Plug 'tpope/vim-surround'
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/syntastic'
-Plugin 'surround.vim'
-"Plugin 'c.vim'
+" Initialize plugin system
+call plug#end()
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
 filetype plugin indent on    " required
 
 "-------------------------------- AFFICHAGE ---------------------------------- 
@@ -92,16 +87,15 @@ set wildmenu
 " Raccourci pour creer les tags dans un fichier
 command! MakeTags !ctags -R .
 
-"---------------------------------- NETRW ------------------------------------ 
+"-------------------------------- NETRW -------------------------------------- 
 
-" Faire de netrw quelquechose de classe
+" Faire de netrw quelquechose de classe (pas au point)
 let g:netrw_banner=0		" disable annoying banner
 let g:netrw_browse_split=4	" open in prior window
 let g:netrw_altv=1			" open splits to the right
 let g:netrw_liststyle=3		" tree view
 "let g:netrw_list_hide=netrw_gitignore#Hide()
 "let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
-
 let g:netrw_winsize=15
 
 " Fait marcher le copier-coller ( vim compilé avec +clipboard )

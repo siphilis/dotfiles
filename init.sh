@@ -76,7 +76,7 @@ brew cask install chromium
 brew cask install karabiner
 brew cask install onyx
 brew cask install emacs
-brew cask install sizeup
+brew cask install shiftit
 
 # Clean outdated utils
 brew cleanup

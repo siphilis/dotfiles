@@ -92,6 +92,7 @@ function hs
 	history | grep $*
 }
 
+alias less='less -q'
 alias hsi='hs -i'
 
 # Color man pages
