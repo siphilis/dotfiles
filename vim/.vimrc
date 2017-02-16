@@ -1,4 +1,4 @@
-"------------------------- Vimrc file from Siphillis ------------------------- 
+"------------------------- Vimrc file from Siphillis -------------------------
 
 "------------------------------ Fevrier 2017 ---------------------------------
 
@@ -7,13 +7,14 @@ call plug#begin()
 
 Plug 'vim-syntastic/syntastic'
 Plug 'tpope/vim-surround'
+Plug 'bling/vim-airline'
 
 " Initialize plugin system
 call plug#end()
 
 filetype plugin indent on    " required
 
-"-------------------------------- AFFICHAGE ---------------------------------- 
+"-------------------------------- AFFICHAGE ----------------------------------
 
 syntax enable		" Active la coloration syntaxique
 set mouse=a			" Permet d'utiliser la souris
@@ -24,7 +25,7 @@ set wrap			" Affiche les lignes trop longues sur plusieur lignes
 set scrolloff=3		" Affiche un minimum de 3 lignes autour du curseur
 set shiftwidth=4	" Regle les tabulations automatiques sur 4 espaces
 set tabstop=4		" Regle l'affichage des tabulations sur 4 espaces
-set background=dark	" Utilise des couleurs adaptees pour fond noir	
+set background=dark	" Utilise des couleurs adaptees pour fond noir
 set laststatus=2	" Affiche la bar de status
 set colorcolumn=80	" Change la couleur de fond a 80 colonnes
 set showcmd			" Affiche les commandes incompletes
@@ -54,7 +55,7 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
-"------------------------------- FUNCTIONS ----------------------------------- 
+"------------------------------- FUNCTIONS -----------------------------------
 
 " Fonction pour passer la numérotation en mode relative "
 function! NumberToggle()
@@ -87,7 +88,7 @@ set wildmenu
 " Raccourci pour creer les tags dans un fichier
 command! MakeTags !ctags -R .
 
-"-------------------------------- NETRW -------------------------------------- 
+"-------------------------------- NETRW --------------------------------------
 
 " Faire de netrw quelquechose de classe (pas au point)
 let g:netrw_banner=0		" disable annoying banner
