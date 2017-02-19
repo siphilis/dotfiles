@@ -3,7 +3,7 @@
 "------------------------------ Fevrier 2017 ---------------------------------
 
 "------------------------------- VIM-PLUG ------------------------------------
-call plug#begin()
+call plug#begin('~/.config/nvim')
 
 Plug 'vim-syntastic/syntastic'
 Plug 'tpope/vim-surround'

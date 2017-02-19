@@ -36054,10 +36054,12 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>1315 418 445 103 0 0 1920 1080 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>325 254 606 456 0 0 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>423 471 937 512 0 0 1920 1080 </string>
+	<string>423 449 796 473 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 47 570 452 0 0 1920 1058 </string>
 	<key>New Bookmarks</key>

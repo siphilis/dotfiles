@@ -13,7 +13,7 @@ fi
 if ! brew info brew-cask &>/dev/null; then
 	brew tap caskroom/cask
 	brew install caskroom/cask/brew-cask
-	brew install homebrew/completions/brew-cask-completion
+	brew install brew-cask-completion
 else
 	:
 fi
@@ -77,6 +77,7 @@ brew cask install karabiner
 brew cask install onyx
 brew cask install emacs
 brew cask install shiftit
+brew cask install vlc
 
 # Clean outdated utils
 brew cleanup
