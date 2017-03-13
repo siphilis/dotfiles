@@ -10,6 +10,7 @@ Plug 'tpope/vim-surround'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
+Plug 'maksimr/vim-translator'
 
 " Initialize plugin system
 call plug#end()
@@ -31,6 +32,7 @@ set background=dark	" Utilise des couleurs adaptees pour fond noir
 set laststatus=2	" Affiche la bar de status
 set colorcolumn=80	" Change la couleur de fond a 80 colonnes
 set showcmd			" Affiche les commandes incompletes
+set listchars=space:.,tab:▸\ ,eol:¬	" set list set nolist nice caracteres
 
 "-------------------------------- RECHERCHE ----------------------------------
 
@@ -118,3 +120,6 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Fait marcher le copier-coller ( vim compilé avec +clipboard )
 set clipboard=unnamed
+
+
+" Configuration de vim translate
