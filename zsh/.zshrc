@@ -2,10 +2,10 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/studio/.oh-my-zsh
+export ZSH=/Users/qdurot/.oh-my-zsh
 
 # Path to gnu utils installed by init.sh
-export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin:"
+# export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin:"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -38,9 +38,9 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew osx tmux )
+plugins=(git brew osx )
 
-source $ZSH/oh-my-zsh.sh
+source ~/.oh-my-zsh/oh-my-zsh.sh
 
 # User configuration
 
@@ -80,6 +80,8 @@ function hs
 	history | grep $*
 }
 alias hsi='hs -i'
+
+alias gcc="gcc -Wall -Werror -Wextra"
 
 # Color man pages
 man() {

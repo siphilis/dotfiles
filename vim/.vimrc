@@ -24,14 +24,16 @@ set title			" Met a jour le titre du terminal
 set number			" Affiche le numero de ligne
 set ruler			" Affiche la position actuelle du curseur
 set wrap			" Affiche les lignes trop longues sur plusieur lignes
-set scrolloff=3		" Affiche un minimum de 3 lignes autour du curseur
+set scrolloff=20	" Affiche un minimum de 20 lignes autour du curseur
 set shiftwidth=4	" Regle les tabulations automatiques sur 4 espaces
 set tabstop=4		" Regle l'affichage des tabulations sur 4 espaces
 set background=dark	" Utilise des couleurs adaptees pour fond noir
 set laststatus=2	" Affiche la bar de status
-set colorcolumn=80	" Change la couleur de fond a 80 colonnes
+set cc=80			" Change la couleur de fond a 80 colonnes
+hi ColorColumn ctermbg=lightgreen
 set showcmd			" Affiche les commandes incompletes
-set listchars=space:.,tab:▸\ ,eol:¬	" set list set nolist nice caracteres
+					" set list set nolist nice caracteres
+set listchars=space:.,tab:▸\ ,eol:¬	
 
 "-------------------------------- RECHERCHE ----------------------------------
 
@@ -96,7 +98,7 @@ command! MakeTags !ctags -R .
 " Faire de netrw quelquechose de classe (pas au point)
 let g:netrw_banner=0		" disable annoying banner
 let g:netrw_browse_split=4	" open in prior window
-"let g:netrw_altv=2			" open splits to the right
+let g:netrw_altv=1			" open splits to the right
 let g:netrw_liststyle=3		" tree view
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
