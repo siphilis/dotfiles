@@ -9,7 +9,6 @@ Plug 'vim-syntastic/syntastic'
 Plug 'tpope/vim-surround'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'scrooloose/nerdtree'
 Plug 'maksimr/vim-translator'
 
 " Initialize plugin system
@@ -103,9 +102,7 @@ let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 let g:netrw_winsize=15
 let g:netrw_preview=1
-"------------------------------ NERDTree -------------------------------------
 
-map <C-m> :NERDTreeToggle<CR>
 "------------------------------ AIRLINE --------------------------------------
 
 " unicode symbols
@@ -119,7 +116,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Fait marcher le copier-coller ( vim compilé avec +clipboard )
-set clipboard=unnamed
+" set clipboard=unnamed
 
 
 " Configuration de vim translate

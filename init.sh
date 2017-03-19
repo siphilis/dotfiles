@@ -81,3 +81,6 @@ brew cask install vlc
 
 # Clean outdated utils
 brew cleanup
+
+# Install shel integration for iterm
+curl -L https://iterm2.com/misc/install_shell_integration_and_utilities.sh | bash
