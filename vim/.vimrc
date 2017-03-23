@@ -24,16 +24,19 @@ set title			" Met a jour le titre du terminal
 set number			" Affiche le numero de ligne
 set ruler			" Affiche la position actuelle du curseur
 set wrap			" Affiche les lignes trop longues sur plusieur lignes
+set linebreak		" Ne coupe pas les mots
 set scrolloff=20	" Affiche un minimum de 20 lignes autour du curseur
 set shiftwidth=4	" Regle les tabulations automatiques sur 4 espaces
 set tabstop=4		" Regle l'affichage des tabulations sur 4 espaces
 set background=dark	" Utilise des couleurs adaptees pour fond noir
 set laststatus=2	" Affiche la bar de status
 set cc=80			" Change la couleur de fond a 80 colonnes
-hi ColorColumn ctermbg=lightgreen
 set showcmd			" Affiche les commandes incompletes
 					" set list set nolist nice caracteres
 set listchars=space:.,tab:▸\ ,eol:¬	
+
+hi ColorColumn ctermbg=lightgreen
+hi Folded ctermbg=NONE "set the folds to not be backgrounded 
 
 "-------------------------------- RECHERCHE ----------------------------------
 
