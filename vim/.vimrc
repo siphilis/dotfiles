@@ -34,6 +34,8 @@ set cc=80			" Change la couleur de fond a 80 colonnes
 set showcmd			" Affiche les commandes incompletes
 					" set list set nolist nice caracteres
 set listchars=space:.,tab:▸\ ,eol:¬	
+set cursorline
+set cursorcolumn
 
 hi ColorColumn ctermbg=lightgreen
 hi Folded ctermbg=NONE "set the folds to not be backgrounded 
