@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/qdurot/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Path to gnu utils installed by init.sh
 # export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin:"
